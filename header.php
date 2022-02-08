@@ -1,59 +1,53 @@
-<?php
-/**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package Elite
- */
-
-?>
 <!doctype html>
-<html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+<html lang="en">
+  <head>
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<?php wp_head(); ?>
-</head>
+    <!-- Website Description -->
+    <meta name="description" content="Blue Chip: Corporate Multi Purpose Business Template" />
+    <meta name="author" content="Blue Chip" />
 
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'elite' ); ?></a>
+    <!--  Favicons / Title Bar Icon  -->
+    <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory');?>/assets/images/favicon/favicon.png" />
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$elite_description = get_bloginfo( 'description', 'display' );
-			if ( $elite_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $elite_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+    <link rel="apple-touch-icon-precomposed" href="<?php bloginfo('stylesheet_directory');?>/assets/images/favicon/favicon.png">
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'elite' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php bloginfo('stylesheet_directory');?>/assets/images/favicon/favicon.png" />
+
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php bloginfo('stylesheet_directory');?>/assets/images/favicon/favicon.png" />
+
+    <title>Blue Chip | Blog Right Sidebar</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/assets/css/font-awesome.min.css">
+
+    <!-- Flat Icon CSS -->
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/assets/css/flaticon.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/assets/css/animate.min.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/assets/css/owl.carousel.min.css">
+
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/assets/css/owl.theme.default.min.css">
+
+    <!-- Fency Box CSS -->
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/assets/css/jquery.fancybox.min.css">
+
+    <!-- Theme Main Style CSS -->
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/assets/css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/assets/css/responsive.css">
+  </head>
+
+  <body>
+    <!-- :::::::::: Header Section Start :::::::: -->
+    
+    <!-- ::::::::::: Header Section End ::::::::: -->
