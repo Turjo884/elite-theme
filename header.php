@@ -20,34 +20,12 @@
 
     <title>Blue Chip | Blog Right Sidebar</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/assets/bootstrap/css/bootstrap.min.css">
 
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/assets/css/font-awesome.min.css">
+    <?php wp_head(); ?>
 
-    <!-- Flat Icon CSS -->
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/assets/css/flaticon.css">
-
-    <!-- Animate CSS -->
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/assets/css/animate.min.css">
-
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/assets/css/owl.carousel.min.css">
-
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/assets/css/owl.theme.default.min.css">
-
-    <!-- Fency Box CSS -->
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/assets/css/jquery.fancybox.min.css">
-
-    <!-- Theme Main Style CSS -->
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/assets/css/style.css">
-
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/assets/css/responsive.css">
   </head>
 
-  <body>
+  <body class="<?php body_class(); ?>">
     <!-- :::::::::: Header Section Start :::::::: -->
     
     <!-- ::::::::::: Header Section End ::::::::: -->

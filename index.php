@@ -39,7 +39,7 @@
                            ?> 
                          
                             <!-- Single Item Blog Post Start -->
-                            <div class="blog-post">
+                            <div class="blog-post <?php post_class(); ?>">
                                 <!-- Blog Banner Image -->
                                 <div class="blog-banner">
                                     <a href="#">
