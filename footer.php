@@ -142,34 +142,6 @@
     </footer>
     <!-- ::::::::::: Footer Section End ::::::::: -->
 
-
-    <!-- JQuery Library File -->
-    <script type="text/javascript" src="<?php bloginfo('template_directory')?>/assets/js/jquery-1.12.4.min.js"></script>
-    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script-->
-
-    <!-- Bootstrap JS -->
-    <script src="<?php bloginfo('template_directory')?>/assets/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Owl Carousel JS -->
-    <script src="<?php bloginfo('template_directory')?>/assets/js/owl.carousel.min.js"></script>
-
-    <!-- Isotop JS -->
-    <script src="<?php bloginfo('template_directory')?>/assets/js/isotop.min.js"></script>
-
-    <!-- Fency Box JS -->
-    <script src="<?php bloginfo('template_directory')?>/assets/js/jquery.fancybox.min.js"></script>
-
-    <!-- Easy Pie Chart JS -->
-    <script src="<?php bloginfo('template_directory')?>/assets/js/jquery.easypiechart.js"></script>
-
-    <!-- JQuery CounterUp JS -->
-    <script src="<?php bloginfo('template_directory')?>/assets/js/waypoints.min.js"></script>
-    <script src="<?php bloginfo('template_directory')?>/assets/js/jquery.counterup.min.js"></script>
-
-    <!-- BlueChip Extarnal Script -->
-    <script type="text/javascript" src="<?php bloginfo('template_directory')?>/assets/js/main.js"></script>
-
-
     <?php wp_footer(); ?>
 
   </body>
