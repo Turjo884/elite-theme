@@ -2221,6 +2221,9 @@ input[type="submit" i]:hover{
 .copyright-area .footer-menu ul{
 	text-align: right;
 }
+ #menu-footer-menu{
+	text-align: right;
+}
 .copyright-area ul li{
 	display: inline;
 	padding-left: 15px;

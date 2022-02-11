@@ -27,5 +27,43 @@
 
   <body class="<?php body_class(); ?>">
     <!-- :::::::::: Header Section Start :::::::: -->
+
+    <header>
+      <div class="container">
+        <div class="row"> 
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                  <?php
+                          
+                    wp_nav_menu(
+                      array(
+                        'menu' => 'primary',
+                        'container' => 'nav',
+                        'container_class' => 'collapse navbar-collapse',
+                        'menu_class' => 'navbar-nav ml-auto',
+                        // 'link_before' => '<span class="screen-reader-text">',
+                        // 'link_after' => '</span>',
+                      )
+                    );
+                          
+                  ?>
+
+                <!-- <div class="collapse navbar-collapse"   id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                  </ul>
+                </div> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
     
     <!-- ::::::::::: Header Section End ::::::::: -->

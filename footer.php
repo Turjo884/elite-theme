@@ -125,14 +125,29 @@
 
                     <!-- Copyright Right Footer Menu Start -->
                     <div class="col-md-6">
-                        <div class="footer-menu">
+
+
+                        <?php
+                        
+                        wp_nav_menu(
+                            array(
+                              'menu'              => 'footer',
+                              'container-class'   => 'footer-menu',
+                            //   'link_before' => '<span class="screen-reader-text">',
+                            //   'link_after' => '</span>',
+                            )
+                          );
+                        
+                        ?>
+
+                        <!-- <div class="footer-menu">
                             <ul>
                                 <li><a href="">About</a></li>
                                 <li><a href="">FAQ</a></li>
                                 <li><a href="">Privacy Policy</a></li>
                                 <li><a href="">Contact</a></li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                     <!-- Copyright Right Footer Menu End -->
                 </div>
