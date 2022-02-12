@@ -120,7 +120,13 @@
                 <div class="row">
                     <!-- Copyright Left Content -->
                     <div class="col-md-6">
-                        <p><a href="">Theme Express</a> © 2018 All rights reserved. Terms of use and Privacy Policy</p>
+
+                        <?php if ( is_active_sidebar( 'copyright-content' ) ) : ?>
+                           <?php dynamic_sidebar( 'copyright-content' ); ?>
+                        <?php else : ?>
+                           <p>Please Add Some Copyright Content From The Widget Area</p>
+                           <?php endif; ?>
+
                     </div>
 
                     <!-- Copyright Right Footer Menu Start -->

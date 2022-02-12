@@ -132,6 +132,18 @@ function elite_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Copyright', 'elite' ),
+			'id'            => 'copyright-content',
+			'description'   => esc_html__( 'Add Footer Copyright Content here.', 'elite' ),
+			'before_widget' => '',
+			'after_widget'  => '',
+			'before_title'  => '<p>',
+			'after_title'   => '</p>',
+		)
+	);
 }
 add_action( 'widgets_init', 'elite_widgets_init' );
 

@@ -2231,3 +2231,9 @@ input[type="submit" i]:hover{
 .copyright-area ul li a{
 	font-weight: 400;
 }
+/* I can write nav instead of header only nav no dot or # this sign */
+header .menu-item a{
+    color: #2f5888;
+    font-size: 16px; 
+    padding: 0 10px;
+}
