@@ -56,20 +56,9 @@
                                 </div>
                                 <!-- Blog Title and Description -->
                                 <div class="blog-description">
-                                    <a href="<?php the_permalink();?>">
                                         <h3 class="post-title"><?php echo the_title();?></h3>
-                                    </a>
                                     <p>
-                                        <?php
-                                    
-                                            if( !is_single() ){
-                                                the_excerpt();
-                                            }
-                                            else{
-                                                the_content();
-                                            }
-                                    
-                                       ?>
+                                        <?php the_content();?>
                                     </p>
                                     <!-- Blog Info, Date and Author -->
                                     <div class="row">
@@ -82,25 +71,7 @@
                                             </div>
                                         </div>
 
-                                        <?php
-                                        
-                                        if( !is_single() ){
-                                            ?>
-                                                <div class="col-md-4 read-more-btn">
-                                                     <a href="<?php the_permalink();?>" class="btn-main">Read More <i class="fa fa-angle-double-right"></i></a>
-                                                </div>
-                                            <?php    
-                                        }
-                                        
-                                        ?>
-
-                                        <?php
-                                        
-                                            if( is_single() ){
-                                                comments_template();
-                                            }
-
-                                        ?>
+                                        <?php comments_template();?>
 
                                     </div>
                                 </div>

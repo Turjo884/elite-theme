@@ -22,3 +22,49 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
+
+/* Single Page Comment Section Css */
+.comments-area{
+    padding: 75px 0 0;
+}
+.comments-area .comments-title{
+    font-size: 18px;
+    padding: 0 0 15px;
+}
+.comments-area .comment-author img{
+    display: block;
+    padding-bottom: 5px;
+}
+.comments-area .comment-metadata .comment-edit-link{
+    display: none;
+}
+.comments-area .comment-content p{
+    padding-top: 15px;
+}
+.comment-respond .comment-reply-title{
+    font-size: 18px;
+    padding-top: 15px;
+}
+.comment-form-comment label{
+    display: block;
+    color: #2f5888;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.comment-form-comment textarea{
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.comment-form-comment textarea:focus-visible{
+    outline: none;
+    border: 1px solid #2f5888;
+}
+
+/* Start Custom Logo  */
+.custom-logo-link img{
+    width: 200px;
+    padding: 10px 0;
+}
+/* End Custom Logo */
